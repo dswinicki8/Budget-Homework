@@ -6,9 +6,7 @@ const compression = require("compression");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-app.get("/", function(req, res) {
-  res.json(path.join(__dirname, "public/index.html"));
-});
+
 
 app.use(logger("dev"));
 
